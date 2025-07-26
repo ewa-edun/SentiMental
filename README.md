@@ -1,85 +1,100 @@
-# SentiMental
-## 🥇 **“SentiMental” — A Simulator for Memories You Never Had**
+# 🧠💜 SentiMental
 
-> *"AI can hallucinate facts. Can it hallucinate feelings too?"*
+> *“It never happened… but it still makes you cry.”*
 
----
+SentiMental is a memory simulator that uses AI to generate **fictional nostalgic memories** based on photos or text inputs. It's an experiment in **hallucinated emotion** — testing the edge where artificial intelligence meets deeply human feeling.
 
-### 🔥 What it is:
-
-A deeply emotional web app that lets users upload a photo (or write a journal entry), and then generates a **fictional memory** — written like it’s from their future self looking back.
-
-You’re not just building a text generator — you’re exploring how AI could mimic the *emotion of nostalgia*, something inherently human.
+Built for the **AI vs H.I. Hackathon by CS Girlies**, SentiMental explores the soulful side of machine learning: not just what AI can *do*, but what it can *make us feel*.
 
 ---
 
-### 💥 What makes it “The Human Edge” + “Chaotic Genius”:
+## ✨ Demo
 
-| Feature                                   | Why It Wins                                                            |
-| ----------------------------------------- | ---------------------------------------------------------------------- |
-| **AI-generated but emotionally rich**     | Feels real, hurts real. Makes people *feel* something unique.          |
-| **Hallucinated nostalgia**                | It’s bizarre, poetic, and human-centric — AI being soulful, not smart. |
-| **Uses emotion detection & storytelling** | That’s where you blend H.I. with A.I. perfectly.                       |
-| **Highly personal, surprising results**   | Adds randomness and chaos — perfect for the “Chaotic Genius” prize.    |
+[📽️ Watch the demo video]()
+🔗 [Try it live (if deployed)]()
+📸 Upload a photo → Get a memory → Cry a little
+😢 Optional: remix memories, hear narration, and check your “Cry Rating”
 
 ---
 
-### 💻 Tech Stack (You can finish in 16 hours!)
+## 💡 Features
 
-| Part                     | Tool                                                                                                              |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Image or text upload     | React (simple form)                                                                                               |
-| Emotion detection        | Gemini Pro Vision or DeepAI Emotion API (optional)                                                                |
-| Memory generation        | Gemini Pro or GPT-4 prompt: "Write a nostalgic memory based on this scene. Make it feel like it really happened." |
-| Optional voice narration | TTS API like ElevenLabs (optional for flair)                                                                      |
-| Vibe music               | Pick a royalty-free lo-fi or melancholic track                                                                    |
-| Storage (optional)       | Firebase or LocalStorage                                                                                          |
-| Deployment               | Vercel or Netlify (for speed)                                                                                     |
+* 📷 **Upload a photo** or type a short journal entry
+* 📝 **AI generates a fictional nostalgic memory**, as if from your future self
+* 🎭 **Emotion remix**: view the same scene rewritten in different emotional tones (joyful, bittersweet, dramatic)
+* 🔊 **Optional voice narration** using TTS
+* 🧠 **“Cry Rating”** – Sentiment analysis ranks emotional impact
+* 🎧 Subtle ambient music for added emotional atmosphere
 
 ---
 
-### 🧠 Prompt Examples for GPT/Gemini:
+## 🤯 Why It Matters
 
-```markdown
-Input: Photo of two kids eating ice cream on a sunny day.
-
-Prompt: "You're a nostalgic older version of the person in this photo. Write a first-person memory about this moment, making it sound deeply emotional — like it shaped who you are. Be poetic but realistic."
-```
-
-It should return something like:
-
-> "It was the summer of ‘22. We didn’t care about the melting cones or sticky fingers — we were gods of that cul-de-sac. That was the last day before Mom left town..."
-
-You can enhance it with:
-
-* **mood detection** from the image (e.g. “joyful”, “melancholic”)
-* **playlist suggestion** based on mood
+Nostalgia is more than memory — it’s emotion, imagination, longing. These are *human* things. SentiMental doesn't just automate tasks — it **mimics humanity**, and in doing so, questions what it means to remember, to feel, and to be.
 
 ---
 
-### 💡 Optional Wild Twists for Extra Chaos/Depth:
+## 🔧 Tech Stack
 
-* “Memory Remix” button: re-generates the same scene from different emotional lenses — happy, bittersweet, dramatic
-* “AI Lies”: It *purposefully hallucinates* false details (adds names, weather, etc.) and warns the user: “This never happened. But it feels like it did, doesn’t it?”
-* “Cry Rating”: Use sentiment analysis to rate how likely it is to make someone cry 🤧
-
----
-
-### 🎥 Demo Video Idea (MAX 1–2 hours to make):
-
-**Narrate it like a documentary trailer or a spoken-word poem.**
-
-* "What if you could relive a memory that never existed?"
-* Show someone uploading a photo → watching a generated memory → sitting in awe (or tears)
-* Zoom in on words from the generated memory
-* Add soft piano or lo-fi music for mood
+| Tool                         | Purpose                    |
+| ---------------------------- | -------------------------- |
+| **React + Tailwind CSS**     | Frontend                   |
+| **Gemini Pro**               | Memory generation          |
+| **Gemini Vision (optional)** | Emotion tagging from image |
+| **ElevenLabs (optional)**    | Text-to-speech narration   |
+| **Vercel**                   | Deployment                 |
+| **Firebase (optional)**      | Storage for uploaded media |
+| **Lo-fi audio**              | Vibe, obviously            |
 
 ---
 
-### 🏆 Submission Notes:
+## 🛠️ How It Works
 
-* **Track:** Push the Limits + Creative Strand
-* **Why it matters:** Because nostalgia is something AI can’t feel — yet somehow, this app *tricks* us into feeling it.
-* **Impact:** Explores memory, identity, and emotion — the *human edge* AI can't recreate authentically.
-* **Uniqueness:** No one's doing “fake memories that feel too real.” This is *Ewa-level poetic hacker energy*.
+1. User uploads an image or enters a short journal entry.
+2. Image is analyzed for mood (optional).
+3. Gemini is prompted with a crafted template to simulate a reflective memory.
+4. The generated story is displayed, with optional:
+
+   * Voice narration via ElevenLabs
+   * Remix options for emotional variety
+   * Cry rating (text sentiment analysis)
+
+---
+
+## 🧗 Challenges
+
+* Prompt engineering for emotional realism
+* Tone balance: poetic without sounding generic or uncanny
+* Latency for TTS rendering
+* Solo-built in under 16 hours — rapid decisions, tight execution
+
+---
+
+## 🏅 Built With Soul
+
+SentiMental was designed, developed, and emotionally stress-tested solo by **\[Your Name / Ewa Edun]**, in a flurry of music, poetry, and too much tea.
+
+---
+
+## 📈 What's Next
+
+* Export memories as postcards or narrated story videos
+* Mobile app with AR overlays (see your memories in real places)
+* Integration with journals or photo albums for long-term tracking
+* Use in therapy or grief support to simulate reflective healing
+
+---
+
+## 🏆 Submission Info
+
+* **Hackathon:** AI vs H.I. by CS Girlies
+* **Track(s):** Push the Limits, Creative Strand
+* **Prize Aim:** The Human Edge Award / Chaotic Genius
+* **Built by:** Ewa (solo)
+
+---
+
+## 📜 License
+
+MIT — free to remix, cry, and share.
 
